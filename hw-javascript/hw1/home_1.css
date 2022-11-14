@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.formal-hr{
+    width: 97%;
+    margin-left: 24px;
+    border-top: 1px solid #ccc;
+}
+    /* Content */
+.profile{
+    padding: 32px 0;
+}
+.profile-head{
+    color: #01abaa;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+}
+.experiences-head,
+.abilities-head{
+    color: #01abaa;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+}
+.profile-title{
+    text-align: center;
+    padding: 16px 0;
+    color: #666;
+    font-weight: 100;
+    font-size: 20px;
+}
+.profile-info{
+    margin-top: 36px;
+    display: flex;
+    padding: 32px 0;
+}
+.profile-info__item{
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.profile-info__item-head{
+    color: #01abaa;
+    font-size: 20px;
+    font-weight: 100;
+    padding-left: 20px;
+}
+.profile-info__item-head-me{
+    color: #01abaa;
+    font-size: 20px;
+    font-weight: 100;
+}
+.profile-info__item-head-title{
+    padding: 14px 20px;
+}
+.profile-info__item-text{
+    padding: 16px 0;
+}
+.profile-info__item-img{
+    width: 254px;
+    border-radius: 2px;
+    margin-left: 40px;
+}
+.profile-info__details-text{
+    padding: 3px;
+}
+    /* Experiences */
+.experiences{
+    padding: 24px 0;
+    background-color: rgb(255,239,213);
+}
+.experiences-head{
+    padding-bottom: 32px;  
+}
+.experiences-info__head,
+.abilities-info__head{
+    color: #01abaa;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 16px 0;
+    margin: 12px 20px 0;
+}
+.experiences__list{
+    display: flex;
+}
+.experiences__item{
+    flex-basis: 30%;
+    margin-left: 20px;
+    padding: 16px 0;
+}
+.experiences__item h3,
+.experiences__item h5{
+    padding-bottom: 12px;
+}
+.experiences__item p{
+    text-align: justify;
+}
+    /* Abilities */
+.abilities-head{
+    padding: 24px;
+    margin-bottom: 12px;
+}
+.abilities-list{
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+}
+.abilities-item{
+    flex-basis: 30%;
+    padding: 16px 0;
+    margin: 0 20px;
+}
+.abilities-item__skill{
+    display: flex;
+    justify-content: space-between;
+}
+.abilities-item__label{
+    padding: 2px 0;
+}
+.abilities-item__icon{
+    color: #ccc;
+}
+.abilities-item__icon--activity{
+    color: #01abaa;
+}
+.github{
+    padding: 32px 0;
+    margin-bottom: 12px;
+}
+.github__text{
+    color: #999;
+    text-align: center;
+}
+.github__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    color: #fff;
+    background-color: #01abaa;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+.vertical-menu {
+    cursor: pointer;
+	width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.vertical-menu a {
+	background-color: #182020;
+	color: white;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+    text-align: center;
+    font-style: bold;
+    font-size: 20px;
+}
+  
+.vertical-menu a:hover {
+	background-color:#01abaa;
+}
+.menu-title{
+	position: fixed;
+}
+
+
+
