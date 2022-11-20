@@ -1,0 +1,55 @@
+:root {
+  --natural-key-width: 48px;
+  --natural-key-height: 200px;
+  --sharp-key-width: 30px;
+  --sharp-key-height: 100px;
+}
+
+#piano-keyboard {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.key-natural {
+  display: flex;
+  position: relative;
+  width: var(--natural-key-width);
+  height: var(--natural-key-height);
+  border: 1px solid black;
+  box-sizing: border-box;
+  background: #fffff0;
+  text-align: center;
+  align-items: flex-end;
+  justify-content:center;
+}
+
+.key-sharp {
+  display: flex;
+  position: relative;
+  width: var(--sharp-key-width);
+  height: var(--sharp-key-height);
+  background: #36454f;
+  box-sizing: border-box;
+  z-index: 1;
+  transform: translateX(-50%);
+  justify-content:center;
+  align-items: flex-end;
+}
+
+.key-sharp + .key-natural {
+  margin-left: calc(-1 * var(--sharp-key-width));
+}
+
+.key-natural.active::after,
+.key-sharp.active::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
