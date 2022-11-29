@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.PeopleList ul{
+    list-style: none;
+}
+.PeopleList ul li{
+    padding: 5px 10px;
+    margin-right: 20px;
+    background-color:beige;
+    color: black;
+    border-bottom: 1px solid black;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
