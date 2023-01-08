@@ -18,9 +18,9 @@ const port = process.env.PORT || 9000
 dotenv.config() 
 
 const pusher = new Pusher({
-    appId: "1524937",
-    key: "f4de34544ef4b4f5e77b",
-    secret: "f847eaacf4a3ad5f7417",
+    appId: "1535262",
+    key: "7af2ca6c7577cc1beff0",
+    secret: "8394d6ed6f0f61607150",
     cluster: "ap1",
     useTLS: true
 });
@@ -30,7 +30,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 // DB Config
-mongoose.connect('mongodb+srv://dop:Tiensi1408@dop.xzl7rjj.mongodb.net/card', {
+mongoose.connect('DATABASE_URL = mongodb+srv://user:user@cluster0.1rzhqdb.mongodb.net/test', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => console.log("MongoDB connected!")).catch((err) => console.log(err))
@@ -44,7 +44,7 @@ mongoose.connection.once('open', () => {
 })
 
 const storage = new GridFsStorage({
-    url: 'mongodb+srv://dop:Tiensi1408@dop.xzl7rjj.mongodb.net/card',
+    url: 'DATABASE_URL = mongodb+srv://user:user@cluster0.1rzhqdb.mongodb.net/test',
     file: (req, file) => {
         return new Promise((resolve, reject) => {
             const filename = `image-${Date.now()}${path.extname(file.originalname)}`

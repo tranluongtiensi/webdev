@@ -7,9 +7,9 @@ import styled from 'styled-components'
 import Messenger from './Messenger'
 
 
-const pusher = new Pusher('fb53aa797214644cdbdc', {
-    cluster: 'ap2'
-})
+var pusher = new Pusher('f4de34544ef4b4f5e77b', {
+    cluster: 'ap1'
+});
 
 const Feed = () => {
     const [postsData, setPostsData] = useState([])
