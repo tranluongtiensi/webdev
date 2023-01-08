@@ -24,7 +24,6 @@ app.get("/", (req, res) => res.status(200).send("Hello TheWebDev"))
 
 app.post("/dating/cards", (req, res) => {
     const dbCards = req.body
-    console.log(dbCards);
     Card.create(dbCards, (err,data) => {
         if(err){
             res.status(500).send(err)

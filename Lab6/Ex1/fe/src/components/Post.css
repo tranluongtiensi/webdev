@@ -1,0 +1,28 @@
+.post {
+    background-color: #fff;
+    min-width: 800px;
+    border: 1px solid lightgray;
+    margin-bottom: 45px;
+}
+
+.post__image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.post__text{
+    font-weight: normal;
+    padding: 20px;
+}
+
+.post__header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.post__avatar{
+    margin-right: 10px;
+}
